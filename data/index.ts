@@ -16,7 +16,7 @@ export const navItems = [
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
       img: "/b1.svg",
-      spareImg: "",
+      spareImg: ""
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ export const navItems = [
       imgClassName: "",
       titleClassName: "justify-start",
       img: "",
-      spareImg: "",
+      spareImg: ""
     },
     {
       id: 3,
@@ -36,7 +36,7 @@ export const navItems = [
       imgClassName: "",
       titleClassName: "justify-center",
       img: "",
-      spareImg: "",
+      spareImg: ""
     },
     {
       id: 4,
@@ -51,7 +51,7 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Currently building a JS Animation library",
+      title: "Currently Building a Financial AI-Related Application",
       description: "The Inside Scoop",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -74,35 +74,39 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "3D Solar System Planets to Explore",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "https://github.com/adrianhajdin?tab=repositories",
+      title: "Work-in-Progress",
+      des: "I am currently working on this project, ETA - August 5th",
+      img: "/bg.png",
+      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/next.svg"],
+      link: "https://www.youtube.com/watch?v=JgkdwhxCyyk",
+      linkMsg: "Check Live Site",
     },
     {
       id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-      img: "/p2.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/zoom-clone",
+      title: "RocketPal",
+      des: "Work towards a healthier life with your personal AI health therapist (Sparkhacks 2024 First Place Winner)",
+      img: "/rocketpal.png",
+      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/py.svg", "/mongo.svg"],
+      link: "https://www.youtube.com/watch?v=JgkdwhxCyyk",
+      linkMsg: "Check Showcase"
     },
     {
       id: 3,
-      title: "AI Image SaaS - Canva Application",
-      des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-      img: "/p3.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/ai_saas_app",
+      title: "Marvelous Movies",
+      des: "Find the trending movies of today with a simple click of a button, and search for your favorite movies!",
+      img: "/movie.png",
+      iconLists: ["/re.svg", "/vite.svg", "/ts.svg"],
+      link: "https://github.com/sshrxt/TS-Movie-App",
+      linkMsg: "Check Repository"
     },
     {
       id: 4,
-      title: "Animated Apple Iphone 3D Website",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-      img: "/p4.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+      title: "Stock-Dashboard",
+      des: "Search up your favorite stock, and get that stock's visual and informative data!",
+      img: "/stock.gif",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
       link: "https://github.com/adrianhajdin/iphone",
+      linkMsg: "Check Live Site"
     },
   ];
   
@@ -142,30 +146,23 @@ export const navItems = [
   export const companies = [
     {
       id: 1,
-      name: "cloudinary",
-      img: "/cloud.svg",
-      nameImg: "/cloudName.svg",
+      name: "evl",
+      nameImg: "/evl.webp",
     },
     {
       id: 2,
-      name: "appwrite",
-      img: "/app.svg",
-      nameImg: "/appName.svg",
-    },
-    {
-      id: 3,
       name: "HOSTINGER",
       img: "/host.svg",
       nameImg: "/hostName.svg",
     },
     {
-      id: 4,
+      id: 3,
       name: "stream",
       img: "/s.svg",
       nameImg: "/streamName.svg",
     },
     {
-      id: 5,
+      id: 4,
       name: "docker.",
       img: "/dock.svg",
       nameImg: "/dockerName.svg",
@@ -175,29 +172,29 @@ export const navItems = [
   export const workExperience = [
     {
       id: 1,
-      title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+      title: "Full-Stack Developer Intern (EVL)",
+      desc: "Queried and Utilized EVL's llamma 3.1 AI models to ensure proper functionality and testing",
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
     },
     {
       id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+      title: "Front-End Team Member (Sparkhacks)",
+      desc: "Assisted in designing UI componenets to lead our team to First Place in SparkHacks, UIC's annual Hack-a-Thon",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp2.svg",
     },
     {
       id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+      title: "Camp Conselour (Expanded Learning)",
+      desc: "Help facilitate camp activities and connections with a group of 150-200 students throughout summer and spring breaks",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp3.svg",
     },
     {
       id: 4,
-      title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      title: "Cashier (Walmart)",
+      desc: "Helped train new assosicates and properly handle cash management during closing shifts",
       className: "md:col-span-2",
       thumbnail: "/exp4.svg",
     },
@@ -207,13 +204,11 @@ export const navItems = [
     {
       id: 1,
       img: "/git.svg",
-    },
-    {
-      id: 2,
-      img: "/twit.svg",
+      link: "https://github.com/sshrxt",
     },
     {
       id: 3,
       img: "/link.svg",
+      link: "https://www.linkedin.com/in/shrut-p/"
     },
   ];

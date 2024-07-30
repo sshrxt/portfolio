@@ -19,19 +19,15 @@ const RecentProjects = () => {
         <span className="text-purple">recent projects</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-0">
-        {projects.map(({id, title, des, img, link, iconLists}) => (
+        {projects.map(({id, title, des, img, link, linkMsg, iconLists}) => (
           <div key={id} className='sm:h-[35rem] h-[30rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw] my-5'>
             {isClient && (
               <PinContainer title={link} href={link}>
                 <div className='relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden mb-10'>
                   <div className='relative w-full h-full overflow-hidden lg:rounded-3xl'>
-                    <img src="/bg.png" alt='bg-img' />
+                    <img src={img} alt='bg-img' />
                   </div>
-                  <img
-                    src={img}
-                    alt={title}
-                    className='w-[80%] absolute bottom-0'
-                  />
+                  
                 </div>
 
                 <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
@@ -65,7 +61,7 @@ const RecentProjects = () => {
 
                   <div className="flex justify-center items-center">
                     <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                      Check Live Site
+                      {linkMsg}
                     </p>
                     <FaLocationArrow className="ms-3" color="#CBACF9" />
                   </div>
