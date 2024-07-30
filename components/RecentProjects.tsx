@@ -1,9 +1,13 @@
-'use client'
+"use client";
 
-import { projects } from '@/data'
-import React, { useEffect, useState } from 'react'
-import { PinContainer } from './ui/3d-pin'
-import { FaLocationArrow } from 'react-icons/fa'
+import { projects } from "@/data";
+import React, { useEffect, useState } from "react";
+import { PinContainer } from "./ui/3d-pin";
+import { FaLocationArrow } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { fadeIn, textVariant } from "@/lib/motion";
+import StarWrapper from "@/lib/SectionWrapper";
+
 
 const RecentProjects = () => {
   const [isClient, setIsClient] = useState(false);
@@ -13,21 +17,30 @@ const RecentProjects = () => {
   }, []);
 
   return (
-    <div className='py-20' id="projects">
-      <h1 className="heading">
-        A small selection of {' '}
-        <span className="text-purple">recent projects</span>
-      </h1>
+    <div className="py-20" id="projects">
+      <motion.div
+        variants={textVariant()}
+        id="projects"
+        className={` text-center`}
+      >
+        <h1 className="heading">
+          A small selection of{" "}
+          <span className="text-purple">recent projects</span>
+        </h1>
+      </motion.div>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-0">
-        {projects.map(({id, title, des, img, link, linkMsg, iconLists}) => (
-          <div key={id} className='sm:h-[35rem] h-[30rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw] my-5'>
+        {projects.map(({ id, title, des, img, link, linkMsg, iconLists }) => (
+          <motion.div
+            variants={fadeIn("up", "tween", .2, 1)}
+            key={id}
+            className="sm:h-[35rem] h-[30rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw] my-5"
+          >
             {isClient && (
               <PinContainer title={link} href={link}>
-                <div className='relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden mb-10'>
-                  <div className='relative w-full h-full overflow-hidden lg:rounded-3xl'>
-                    <img src={img} alt='bg-img' />
+                <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden mb-10">
+                  <div className="relative w-full h-full overflow-hidden lg:rounded-3xl">
+                    <img src={img} alt="bg-img" />
                   </div>
-                  
                 </div>
 
                 <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
@@ -68,11 +81,11 @@ const RecentProjects = () => {
                 </div>
               </PinContainer>
             )}
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default RecentProjects
+export default StarWrapper(RecentProjects, "projects");

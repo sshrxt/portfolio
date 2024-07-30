@@ -5,6 +5,7 @@ const ExperienceCard: any = ({ experience }: { experience: any }) => {
     console.log(experience)
   return (
     <VerticalTimelineElement
+      className="slide-in"
       visible={true}
       contentStyle={{ background: "#1d1836", color: "#fff" }}
       contentArrowStyle={{ borderRight: "7px solid #232631" }}

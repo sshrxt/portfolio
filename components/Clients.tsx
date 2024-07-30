@@ -4,15 +4,21 @@ import React from "react";
 
 import { companies, testimonials } from "@/data";
 import { InfiniteMovingCards } from "./ui/InfiniteMovingCards";
+import StarWrapper from "@/lib/SectionWrapper";
+import {motion} from 'framer-motion'
+import {fadeIn, textVariant} from "@/lib/motion";
 
 const Clients = () => {
   return (
     <section id="testimonials" className="py-20">
-      <h1 className="heading">
-        Kind words from
-        <span className="text-purple"> satisfied clients</span> & <span className="text-purple"> employers</span>
-      </h1>
+      <motion.div variants={textVariant()}>
+        <h1 className="heading">
+          Kind words from
+          <span className="text-purple"> satisfied clients</span> & <span className="text-purple"> employers</span>
+        </h1>
+      </motion.div>
 
+      <motion.div variants={fadeIn("up", "tween", .2, 1)}>
       <div className="flex flex-col items-center max-lg:mt-10">
         <div
           // remove bg-white dark:bg-black dark:bg-grid-white/[0.05], h-[40rem] to 30rem , md:h-[30rem] are for the responsive design
@@ -25,7 +31,7 @@ const Clients = () => {
           />
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10">
+        <div  className="flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10">
           {companies.map((company) => (
             <React.Fragment key={company.id}>
               <div className="flex md:max-w-60 max-w-32 gap-2">
@@ -56,8 +62,9 @@ const Clients = () => {
           ))}
         </div>
       </div>
+      </motion.div>
     </section>
   );
 };
 
-export default Clients;
+export default StarWrapper(Clients, "testimonials");

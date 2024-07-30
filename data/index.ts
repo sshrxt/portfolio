@@ -23,9 +23,17 @@ import {
   jobit,
   tripguide,
   threejs,
+  python,
+  c,
+  cplus,
+  framer,
+  githubicon,
+  nexticon,
+  npm,
+  pythonicon,
+  vite,
+  mongo
 } from "../assets/index";
-
-
 
 
 
@@ -182,9 +190,8 @@ export const navItems = [
     },
     {
       id: 2,
-      name: "HOSTINGER",
-      img: "/host.svg",
-      nameImg: "/hostName.svg",
+      name: "UIC",
+      nameImg: "/uic.png",
     },
     {
       id: 3,
@@ -303,14 +310,6 @@ export const navItems = [
 
 export const technologies = [
     {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
-    {
       name: "JavaScript",
       icon: javascript,
     },
@@ -319,24 +318,44 @@ export const technologies = [
       icon: typescript,
     },
     {
+      name: "Tailwind CSS",
+      icon: tailwind,
+    },
+    {
       name: "React JS",
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "nextjs",
+      icon: nexticon,
     },
     {
-      name: "Tailwind CSS",
-      icon: tailwind,
+      name: "HTML 5",
+      icon: html,
     },
+    {
+      name: "CSS 3",
+      icon: css,
+    },
+    {
+      name: "python",
+      icon: pythonicon,
+    },
+    {
+      name: "c",
+      icon: c,
+    },
+    {
+      name: "c++",
+      icon: cplus,
+    }, 
     {
       name: "Node JS",
       icon: nodejs,
     },
     {
       name: "MongoDB",
-      icon: mongodb,
+      icon: mongo,
     },
     {
       name: "Three JS",
@@ -347,12 +366,9 @@ export const technologies = [
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
+      name: "vite",
+      icon: vite,
     },
   ];
-  
+
+ 

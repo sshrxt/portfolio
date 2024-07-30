@@ -5,28 +5,36 @@ import { AnimatePresence, motion } from "framer-motion";
 
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 
+import StarWrapper from "@/lib/SectionWrapper";
+import {fadeIn, slideIn, textVariant} from "@/lib/motion";
+
 const Approach = () => {
   return (
     <section className="w-full py-20">
+      <motion.div variants={textVariant()}>
       <h1 className="heading">
         My <span className="text-purple">approach</span>
       </h1>
-      {/* remove bg-white dark:bg-black */}
+      </motion.div>
+
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
-        {/* add des prop */}
-        <Card
-          title="Planning & Strategy"
-          icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
-        >
-          <CanvasRevealEffect
-            animationSpeed={5.1}
-            // add these classed for the border rounded overflowing -> rounded-3xl overflow-hidden
-            containerClassName="bg-emerald-900 rounded-3xl overflow-hidden"
-          />
-        </Card>
+        <motion.div variants={slideIn("left", "spring", 0.1, 0.8)}>
+          <Card
+            title="Planning & Strategy"
+            icon={<AceternityIcon order="Phase 1" />}
+            des="We'll collaborate to map out your website's goals, target audience, 
+            and key functionalities. We'll discuss things like site structure, 
+            navigation, and content requirements."
+          >
+            <CanvasRevealEffect
+              animationSpeed={5.1}
+              // add these classed for the border rounded overflowing -> rounded-3xl overflow-hidden
+              containerClassName="bg-emerald-900 rounded-3xl overflow-hidden"
+            />
+          </Card>
+        </motion.div>
+
+        <motion.div variants={slideIn("left", "spring", 0.3, 0.8)}>
         <Card
           title="Development & Progress Update"
           icon={<AceternityIcon order="Phase 2" />}
@@ -45,10 +53,11 @@ const Approach = () => {
             ]}
             dotSize={2}
           />
-          {/* Radial gradient for the cute fade */}
-          {/* remove this one */}
-          {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
+          
         </Card>
+        </motion.div>
+
+        <motion.div variants={slideIn("left", "spring", 0.5, 0.8)}>
         <Card
           title="Development & Launch"
           icon={<AceternityIcon order="Phase 3" />}
@@ -62,12 +71,13 @@ const Approach = () => {
             colors={[[125, 211, 252]]}
           />
         </Card>
+        </motion.div>
       </div>
     </section>
   );
 };
 
-export default Approach;
+export default StarWrapper(Approach, "approach");
 
 const Card = ({
   title,

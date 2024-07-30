@@ -1,10 +1,17 @@
+'use client'
+
 import { FaLocationArrow } from "react-icons/fa6";
 
 import { socialMedia } from "@/data";
 import MagicButton from "./ui/MagicButton";
 
+import {motion} from 'framer-motion'
+import {fadeIn, textVariant} from "@/lib/motion";
+import StarWrapper from "@/lib/SectionWrapper";
+
 const Footer = () => {
   return (
+    <motion.div variants={fadeIn("up", "tween", .2, 1)}>
     <footer className="w-full mb-[100px] pb-10" id="contact">
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
@@ -42,7 +49,8 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </motion.div>
   );
 };
 
-export default Footer;
+export default StarWrapper(Footer, "footer");

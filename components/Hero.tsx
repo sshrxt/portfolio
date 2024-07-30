@@ -1,9 +1,13 @@
+'use client'
+
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
 import { Button, MovingBorder } from "./ui/Moving";
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
+
 
 const Hero = () => {
   return (
@@ -26,34 +30,36 @@ const Hero = () => {
       </div>
 
       <div className="flex justify-center relative my-20 z-10">
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <TextGenerateEffect
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Transforming Concepts into Seamless User Experiences"
-          />
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi👋 I&apos;m Shrut, a Next.js Developer based in <span className="text-blue-400">Chicago, Illinois</span>
-          </p>
-
-          <div className="relative inline-flex overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950  text-sm font-medium text-white backdrop-blur-3xl">
-            <img
-              src="/pfp.jpg"
-              alt="photo of shrut"
-              className="w-[250px] rounded-full object-cover"
+        <RoughNotationGroup show={true}>
+          <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+            <TextGenerateEffect
+              className="text-center text-[40px] md:text-5xl lg:text-6xl"
+              words="Transforming Concepts into Seamless User Experiences"
             />
-            </span>
+            <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+              Hi👋 I&apos;m Shrut, a <RoughNotation type="box" color="#829BC8">Web Developer</RoughNotation> based in <RoughNotation type="highlight" color="#7B749F">Chicago, Illinois</RoughNotation>
+            </p>
+
+            <div className="relative inline-flex overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 mt-5 mb-2">
+              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950  text-sm font-medium text-white backdrop-blur-3xl">
+              <img
+                src="/pfp.jpg"
+                alt="photo of shrut"
+                className="w-[300px] rounded-full object-cover"
+              />
+              </span>
+            </div>
+
+            <a href="#projects">
+              <MagicButton
+                title="Show My Work"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
           </div>
-
-          <a href="#projects">
-            <MagicButton
-              title="Show My Work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
-        </div>
+        </RoughNotationGroup>
       </div>
     </div>
   );
