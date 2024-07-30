@@ -8,6 +8,8 @@ import Clients from "@/components/Clients";
 import Experience from "@/components/Experience";
 import Approach from "@/components/Approach";
 import Footer from "@/components/Footer"
+import WorkExperience from "@/components/WorkExperience";
+import Tech from "@/components/Tech";
 
 export default function Home() {
   return (
@@ -17,8 +19,9 @@ export default function Home() {
         <Hero />
         <Grid />
         <RecentProjects />
+        <WorkExperience />
+        <Tech />
         <Clients />
-        <Experience />
         <Approach />
         <Footer />
       </div>
