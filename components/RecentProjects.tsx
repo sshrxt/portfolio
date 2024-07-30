@@ -7,6 +7,7 @@ import { FaLocationArrow } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "@/lib/motion";
 import StarWrapper from "@/lib/SectionWrapper";
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
 
 const RecentProjects = () => {
@@ -24,8 +25,8 @@ const RecentProjects = () => {
         className={` text-center`}
       >
         <h1 className="heading">
-          A small selection of{" "}
-          <span className="text-purple">recent projects</span>
+          A <RoughNotation animationDelay={.5} animationDuration={1} show={true} type="highlight" color="#D484A9">Small</RoughNotation> Selection of{" "}
+          <span className="text-purple">Recent Projects</span>
         </h1>
       </motion.div>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-0">

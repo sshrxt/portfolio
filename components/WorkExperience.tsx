@@ -13,6 +13,7 @@ import { fadeIn, textVariant } from "@/lib/motion";
 import ExperienceCard from "./ui/ExperienceCard";
 import {styles} from '@/lib/styles'
 import StarWrapper from '@/lib/SectionWrapper'
+import { RoughNotation } from "react-rough-notation";
 
 
 const WorkExperience = () => {
@@ -20,7 +21,7 @@ const WorkExperience = () => {
     <div id="experience" className="py-16 w-full">
       <motion.div variants={textVariant()} id="experience" className={`text-center`}>
         <h1 className="heading text-white">
-          My <span className="text-purple">Work Experience</span>
+          My <span className="text-purple"><RoughNotation animationDelay={2} type="underline" iterations={2} show={true} color="white">Work Experience</RoughNotation></span>
         </h1>
       </motion.div>
       

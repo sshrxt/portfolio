@@ -9,6 +9,8 @@ import {GlobeDemo} from "./GridGlobe";
 import MagicButton from "./MagicButton";
 import animationData from "@/data/confetti.json"
 
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
+
 export const BentoGrid = ({
   className,
   children,
@@ -33,6 +35,7 @@ export const BentoGridItem = ({
   className,
   id,
   title,
+  titleHighlight,
   description,
   //   remove unecessary things here
   img,
@@ -43,6 +46,7 @@ export const BentoGridItem = ({
   className?: string;
   id: number;
   title?: string | React.ReactNode;
+  titleHighlight?: string;
   description?: string | React.ReactNode;
   img?: string;
   imgClassName?: string;
@@ -59,6 +63,48 @@ export const BentoGridItem = ({
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
+
+  type AnnotationType = "highlight" | "underline" | "box" | "circle"; 
+
+  const getAnnotationType = (title: string): AnnotationType => {
+    console.log(title)
+    switch (title) {
+      case "hire me?":
+        return "highlight";
+      case "My Tech Stack":
+        return "underline";
+      case "SWE internship":
+        return "highlight";
+      case "Financial AI-Related Application":
+        return "highlight";
+      case "time zone communications":
+        return "underline";
+      case "consumer satisfaction":
+        return "highlight";
+      default:
+        return "highlight"; 
+    }
+  };
+  
+  const getAnnotationColor = (title: string): string => {
+    switch (title) {
+      case "hire me?":
+        return "#242248";
+      case "My Tech Stack":
+        return "#6F5BDE";
+      case "SWE internship":
+        return "#7C7AA9";
+      case "Financial AI-Related Application":
+        return "#9595ED";
+      case "time zone communications":
+        return "#4039C5";
+      case "consumer satisfaction":
+        return "#564474";
+      default:
+        return "#000000"; // Default color
+    }
+  };
+  
 
   return (
     <div
@@ -116,6 +162,7 @@ export const BentoGridItem = ({
             className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
           >
             {title}
+            {titleHighlight && <RoughNotation show={true} type={getAnnotationType(titleHighlight)} color={getAnnotationColor(titleHighlight)}>{titleHighlight}</RoughNotation>}
           </div>
 
           {id === 2 && <GlobeDemo />}

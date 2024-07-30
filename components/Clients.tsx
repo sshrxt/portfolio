@@ -7,14 +7,15 @@ import { InfiniteMovingCards } from "./ui/InfiniteMovingCards";
 import StarWrapper from "@/lib/SectionWrapper";
 import {motion} from 'framer-motion'
 import {fadeIn, textVariant} from "@/lib/motion";
+import { RoughNotation } from "react-rough-notation";
 
 const Clients = () => {
   return (
     <section id="testimonials" className="py-20">
       <motion.div variants={textVariant()}>
         <h1 className="heading">
-          Kind words from
-          <span className="text-purple"> satisfied clients</span> & <span className="text-purple"> employers</span>
+          <RoughNotation type="highlight" show={true} color="#1C1F40">Kind Words</RoughNotation> From
+          <span className="text-purple"> <RoughNotation type="box" color="#829BC8" show={true}>Satisfied Clients</RoughNotation></span> & <span className="text-purple"> <RoughNotation  type="box" color="#829BC8" show={true}>Employers</RoughNotation></span>
         </h1>
       </motion.div>
 

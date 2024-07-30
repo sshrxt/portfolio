@@ -7,13 +7,14 @@ import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 
 import StarWrapper from "@/lib/SectionWrapper";
 import {fadeIn, slideIn, textVariant} from "@/lib/motion";
+import { RoughNotation } from "react-rough-notation";
 
 const Approach = () => {
   return (
     <section className="w-full py-20">
       <motion.div variants={textVariant()}>
       <h1 className="heading">
-        My <span className="text-purple">approach</span>
+        My <span className="text-purple"><RoughNotation animationDelay={2} type="underline" color="#829BC8" show={true}>Approach</RoughNotation></span>
       </h1>
       </motion.div>
 
