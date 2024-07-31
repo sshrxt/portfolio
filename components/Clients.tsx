@@ -20,14 +20,14 @@ const Clients = () => {
           From
           <span className="text-purple">
             {" "}
-            <RoughNotation type="box" color="#829BC8" show={true}>
+            <RoughNotation type="underline" color="#829BC8" show={true}>
               Satisfied Clients
             </RoughNotation>
           </span>{" "}
           &{" "}
           <span className="text-purple">
             {" "}
-            <RoughNotation type="box" color="#829BC8" show={true}>
+            <RoughNotation type="underline" color="#829BC8" show={true}>
               Employers
             </RoughNotation>
           </span>

@@ -87,3 +87,44 @@
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
 }
+
+@layer components {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #a5b4fc;
+    width: 5px;
+    border-radius: 10px;
+  }
+
+  .custom-scrollbar-dark::-webkit-scrollbar-thumb {
+    background-color: #312e81;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a5b4fc;
+  width: 5px;
+  border-radius: 10px;
+  height: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6626c5;
+}

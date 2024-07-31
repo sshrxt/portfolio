@@ -162,7 +162,7 @@ export const navItems = [
   export const testimonials = [
     {
       quote:
-        "Shrut has been an outstanding coworker, combining exceptional technical skills with a positive attitude. His dedication and collaborative spirit have greatly enhanced our team's success. It's a pleasure working with someone who is both talented and supportive.",
+        "Shrut has been an outstanding coworker, combining exceptional technical skills with a positive attitude. His dedication and collaborative spirit have greatly enhanced our team's success. It's a pleasure working with someone who is both talented and supportive. His contributions have significantly enhanced our team's performance and morale.",
       name: "Piotr Brozek",
       title: "Full-Stack Web Developer at EVL",
       img: '/peter.jpg',
@@ -176,7 +176,7 @@ export const navItems = [
     },
     {
       quote:
-        "Shrut has been an outstanding coworker, combining exceptional technical skills with a positive attitude. His dedication and collaborative spirit have greatly enhanced our team's success. It's a pleasure working with someone who is both talented and supportive.",
+        "Shrut has been an outstanding coworker, combining exceptional technical skills with a positive attitude. His dedication and collaborative spirit have greatly enhanced our team's success. It's a pleasure working with someone who is both talented and supportive. His contributions have significantly enhanced our team's performance and morale.",
       name: "Piotr Brozek",
       title: "Full-Stack Web Developer at EVL",
       img: '/peter.jpg',

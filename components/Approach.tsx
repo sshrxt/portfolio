@@ -14,7 +14,7 @@ const Approach = () => {
     <section className="w-full py-20">
       <motion.div variants={textVariant()}>
       <h1 className="heading">
-        My <span className="text-purple"><RoughNotation animationDelay={2} type="underline" color="#829BC8" show={true}>Approach</RoughNotation></span>
+        My <span className="text-purple"><RoughNotation animationDelay={12} type="underline" color="#829BC8" show={true}>Approach</RoughNotation></span>
       </h1>
       </motion.div>
 
