@@ -201,15 +201,8 @@ export const navItems = [
     },
     {
       id: 3,
-      name: "stream",
-      img: "/s.svg",
-      nameImg: "/streamName.svg",
-    },
-    {
-      id: 4,
-      name: "docker.",
-      img: "/dock.svg",
-      nameImg: "/dockerName.svg",
+      name: "UIUC",
+      nameImg: "/uiuc.png",
     },
   ];
   
