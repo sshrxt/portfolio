@@ -35,6 +35,11 @@ import {
   mongo
 } from "../assets/index";
 
+import evl from "@/public/evl.webp"
+import sparkhacks from "@/public/sparkhacks.png"
+import frc from "@/public/frc.png"
+import walmart from "@/public/walmart.png"
+
 
 
 export const navItems = [
@@ -49,13 +54,13 @@ export const navItems = [
   export const gridItems = [
     {
       id: 1,
-      title: "I prioritize quality and consistency, ensuring ",
-      titleHighlight: "consumer satisfaction",
+      title: "Professionaly Certified in",
+      titleHighlight: " Cybersecurity",
       description: "",
-      className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+      className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[50vh]",
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
-      img: "/b1.svg",
+      img: "/hacker.webp",
       spareImg: ""
     },
     {
@@ -157,9 +162,10 @@ export const navItems = [
   export const testimonials = [
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Shrut has been an outstanding coworker, combining exceptional technical skills with a positive attitude. His dedication and collaborative spirit have greatly enhanced our team's success. It's a pleasure working with someone who is both talented and supportive.",
+      name: "Piotr Brozek",
+      title: "Full-Stack Web Developer at EVL",
+      img: '/pfp.jpg',
     },
     {
       quote:
@@ -259,55 +265,52 @@ export const navItems = [
 
  export const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      title: "Full-Stack Developer",
+      company_name: "Electronic Visualization Labratory(evl)",
+      icon: evl,
+      iconBg: "black",
+      date: "June 2024 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Queried and Utilized EVL's llamma 3.1 AI models to ensure proper functionality and testing",
+        "Developed REST Api's to perform CRUD operations utilizing Express JS and Typescript",
+        "Created a dynamic Web Application utilizing NextJs, Gsap, Threejs, React, Express, and Typescript",
+      ],
+    },
+    {
+      title: "Front-End Developer",
+      company_name: "SparkHacks",
+      icon: sparkhacks,
+      iconBg: "black",
+      date: "Feb 2024",
+      points: [
+        "Designed UI componenets to ensure consumer satisfication and response",
+        "Collaborated with cross-functional teams including designers and backend engineers to create a high quality webpage.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      title: "Camp Facilitator",
+      company_name: "Expanded Learning",
+      icon: frc,
+      iconBg: "black",
+      date: "June 2022 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Cultivated an inclusive learning envrionment throughout Spring and Summer camps, driving consistent weekly participation exceeding 15 students",
+        "Spearheaded team synergy and leadership development throughout the basketball season via innovative and dynamic practice sessionsand games",
+        "Orchestrated cohesive student interactions through meticulosy planned activities fostering organic social bonds",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      title: "Cashier",
+      company_name: "Walmart",
+      icon: walmart,
+      iconBg: "white",
+      date: "Nov. 2021 - June 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Utilized Walmart's POS system to process transactions quickly and accurately, demonstrating proficiency with software systems and data entry",
+        "Developed and implemented efficient checkout processes, reducing customer wait times and enhancing overall store efficiency",
+        "Collaborated with a team of cashiers and supervisors to streamline operations during peak hours, emphasizing teamwork and leadership potential",
       ],
     },
   ];

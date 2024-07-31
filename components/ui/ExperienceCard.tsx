@@ -16,7 +16,7 @@ const ExperienceCard: any = ({ experience }: { experience: any }) => {
           <img
             src={experience.icon.src}
             alt={experience.company_name}
-            className="w-[60%] h-[60%] object-contain"
+            className="w-[100%] h-[100%] object-contain"
           />
         </div>
       }
