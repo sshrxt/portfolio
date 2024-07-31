@@ -28,10 +28,10 @@ const Footer = () => {
       <footer className="w-full mb-[100px] pb-10" id="contact">
         <div className="flex flex-col items-center">
           <h1 className="heading lg:max-w-[45vw]">
-            Ready to take{' '}
+            Ready to take your{' '}
             {showNotations.company ? (
               <RoughNotation type="highlight" show={true} color="#cbacf9" animationDelay={2}>
-                your Company
+                 Company
               </RoughNotation>
             ) : (
               'your Company'

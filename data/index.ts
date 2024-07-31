@@ -84,8 +84,8 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "Tech enthusiast looking for a ",
-      titleHighlight: "SWE internship",
+      title: "Tech enthusiast looking for a SWE",
+      titleHighlight: " internship",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
@@ -96,8 +96,8 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Currently Building a ",
-      titleHighlight: "Financial AI-Related Application",
+      title: "Currently Building a Financial AI-Related Application",
+      titleHighlight: "",
       description: "The Inside Scoop",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -107,8 +107,8 @@ export const navItems = [
     },
     {
       id: 6,
-      title: "Do you want to ",
-      titleHighlight: "hire me?",
+      title: "Do you want to hire me?",
+      titleHighlight: "",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",

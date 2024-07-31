@@ -37,7 +37,7 @@ const Hero = () => {
               words="Revitalizing Dreams into Impactful Solutions"
             />
             <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-              Hi👋 I&apos;m Shrut, a <RoughNotation type="box" color="#829BC8">Web Developer</RoughNotation> based in <RoughNotation type="highlight" color="#7B749F">Chicago, Illinois</RoughNotation>
+              Hi👋 I&apos;m Shrut, a <RoughNotation type="box" color="#829BC8" animationDelay={1}>Web Developer</RoughNotation> based in <RoughNotation type="highlight" color="#7B749F" animationDelay={1}>Chicago,</RoughNotation> <RoughNotation type="highlight" color="#7B729F" animationDelay={1.05}> Illinois</RoughNotation>
             </p>
 
             <div className="relative inline-flex overflow-hidden rounded-lg p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 mt-5 mb-2">

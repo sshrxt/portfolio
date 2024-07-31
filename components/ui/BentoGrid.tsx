@@ -72,13 +72,13 @@ export const BentoGridItem = ({
     console.log(title);
     switch (title) {
       case "hire me?":
-        return "highlight";
+        return "underline";
       case "My Tech Stack":
         return "underline";
       case "SWE internship":
         return "highlight";
       case "Financial AI-Related Application":
-        return "highlight";
+        return "underline";
       case "time zone communications":
         return "underline";
       case "Cybersecurity":
@@ -91,7 +91,7 @@ export const BentoGridItem = ({
   const getAnnotationColor = (title: string): string => {
     switch (title) {
       case "hire me?":
-        return "#242248";
+        return "aliceblue";
       case "My Tech Stack":
         return "#6F5BDE";
       case "SWE internship":
