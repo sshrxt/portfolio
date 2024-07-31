@@ -45,8 +45,8 @@ import walmart from "@/public/walmart.png"
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
     { name: "Experience", link: "#experience" },
+    { name: "Testimonials", link: "#testimonials" },
     { name: "My Approach", link: "#approach" },
     { name: "Contact", link: "#contact" },
   ];
@@ -165,28 +165,28 @@ export const navItems = [
         "Shrut has been an outstanding coworker, combining exceptional technical skills with a positive attitude. His dedication and collaborative spirit have greatly enhanced our team's success. It's a pleasure working with someone who is both talented and supportive.",
       name: "Piotr Brozek",
       title: "Full-Stack Web Developer at EVL",
-      img: '/pfp.jpg',
+      img: '/peter.jpg',
     },
     {
       quote:
         "During Shrut's internship, he demonstrated exceptional skill and enthusiasm in every task. His ability to quickly grasp new concepts, tackle complex challenges, and contribute effectively to our projects was impressive. Shrut’s proactive approach, strong problem-solving skills, and eagerness to learn made him a valuable asset to our team and a pleasure to work with.",
       name: "Luc Renambot",
       title: "Research Professor at EVL",
-      img: '/pfp.jpg',
+      img: '/luc.jpg',
     },
     {
       quote:
         "Shrut has been an outstanding coworker, combining exceptional technical skills with a positive attitude. His dedication and collaborative spirit have greatly enhanced our team's success. It's a pleasure working with someone who is both talented and supportive.",
       name: "Piotr Brozek",
       title: "Full-Stack Web Developer at EVL",
-      img: '/pfp.jpg',
+      img: '/peter.jpg',
     },
     {
       quote:
         "During Shrut's internship, he demonstrated exceptional skill and enthusiasm in every task. His ability to quickly grasp new concepts, tackle complex challenges, and contribute effectively to our projects was impressive. Shrut’s proactive approach, strong problem-solving skills, and eagerness to learn made him a valuable asset to our team and a pleasure to work with.",
       name: "Luc Renambot",
       title: "Research Professor at EVL",
-      img: '/pfp.jpg',
+      img: '/luc.jpg',
     },
   ];
   
