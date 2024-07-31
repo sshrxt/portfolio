@@ -25,7 +25,7 @@ const Footer = () => {
         setShowNotations({ company: true, ideas: true, today: true, goals: true })
       }
     >
-      <footer className="w-full mb-[100px] pb-10" id="contact">
+      <footer className="w-full mb-[10px] pb-10" id="contact">
         <div className="flex flex-col items-center">
           <h1 className="heading lg:max-w-[45vw]">
             Ready to take your{' '}
@@ -73,7 +73,7 @@ const Footer = () => {
             />
           </a>
         </div>
-        <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+        <div className="flex mt-16 md:flex-row flex-col justify-between items-center gap-[14px]">
           <p className="md:text-base text-sm md:font-normal font-light">
             Copyright © 2024 Shrut Patel
           </p>
