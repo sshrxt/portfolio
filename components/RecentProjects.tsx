@@ -25,7 +25,7 @@ const RecentProjects = () => {
         className={` text-center`}
       >
         <h1 className="heading">
-          A <RoughNotation animationDelay={.5} animationDuration={1} show={true} type="highlight" color="#D484A9">Small</RoughNotation> Selection of{" "}
+          A <RoughNotation animationDelay={.5} animationDuration={1} show={true} type="highlight" color="#6F579F">Small</RoughNotation> Selection of{" "}
           <span className="text-purple">Recent Projects</span>
         </h1>
       </motion.div>

@@ -169,27 +169,24 @@ export const navItems = [
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "During Shrut's internship, he demonstrated exceptional skill and enthusiasm in every task. His ability to quickly grasp new concepts, tackle complex challenges, and contribute effectively to our projects was impressive. Shrut’s proactive approach, strong problem-solving skills, and eagerness to learn made him a valuable asset to our team and a pleasure to work with.",
+      name: "Luc Renambot",
+      title: "Research Professor at EVL",
+      img: '/pfp.jpg',
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Shrut has been an outstanding coworker, combining exceptional technical skills with a positive attitude. His dedication and collaborative spirit have greatly enhanced our team's success. It's a pleasure working with someone who is both talented and supportive.",
+      name: "Piotr Brozek",
+      title: "Full-Stack Web Developer at EVL",
+      img: '/pfp.jpg',
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "During Shrut's internship, he demonstrated exceptional skill and enthusiasm in every task. His ability to quickly grasp new concepts, tackle complex challenges, and contribute effectively to our projects was impressive. Shrut’s proactive approach, strong problem-solving skills, and eagerness to learn made him a valuable asset to our team and a pleasure to work with.",
+      name: "Luc Renambot",
+      title: "Research Professor at EVL",
+      img: '/pfp.jpg',
     },
   ];
   
