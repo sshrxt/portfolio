@@ -10,8 +10,10 @@ import StarWrapper from "@/lib/SectionWrapper";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
 
+
 const RecentProjects = () => {
   const [isClient, setIsClient] = useState(false);
+  const [showRoughNotation, setShowRoughNotation] = useState(false);
 
   useEffect(() => {
     setIsClient(true);
@@ -20,15 +22,28 @@ const RecentProjects = () => {
   return (
     <div className="py-20" id="projects">
       <motion.div
-        variants={textVariant()}
-        id="projects"
-        className={` text-center`}
-      >
-        <h1 className="heading">
-          A <RoughNotation animationDelay={.5} animationDuration={1} show={true} type="highlight" color="#6F579F">Small</RoughNotation> Selection of{" "}
-          <span className="text-purple">Recent Projects</span>
-        </h1>
-      </motion.div>
+      variants={textVariant()}
+      id="projects"
+      className="text-center"
+      onAnimationComplete={() => setShowRoughNotation(true)}
+    >
+      <h1 className="heading">
+        A{' '}
+        {showRoughNotation ? (
+          <RoughNotation
+            animationDelay={2}
+            show={true}
+            type="highlight"
+            color="#6F579F"
+          >
+            Small
+          </RoughNotation>
+        ) : (
+          'Small'
+        )}{' '}
+        Selection of <span className="text-purple">Recent Projects</span>
+      </h1>
+    </motion.div>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-0">
         {projects.map(({ id, title, des, img, link, linkMsg, iconLists }) => (
           <motion.div

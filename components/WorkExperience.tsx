@@ -15,15 +15,39 @@ import {styles} from '@/lib/styles'
 import StarWrapper from '@/lib/SectionWrapper'
 import { RoughNotation } from "react-rough-notation";
 
+import { useEffect, useState } from 'react';
+
 
 const WorkExperience = () => {
+
+  const [showRoughNotation, setShowRoughNotation] = useState(false);
   return (
     <div id="experience" className="py-16 w-full">
-      <motion.div variants={textVariant()} id="experience" className={`text-center`}>
-        <h1 className="heading text-white">
-          My <span className="text-purple"><RoughNotation animationDelay={2} type="underline" iterations={2} show={true} color="white">Work Experience</RoughNotation></span>
-        </h1>
-      </motion.div>
+      <motion.div
+      variants={textVariant()}
+      id="experience"
+      className="text-center"
+      onAnimationComplete={() => setShowRoughNotation(true)} // Set state to true when animation completes
+    >
+      <h1 className="heading text-white">
+        My{' '}
+        <span className="text-purple">
+          {showRoughNotation ? (
+            <RoughNotation
+              animationDelay={2}
+              type="underline"
+              iterations={2}
+              show={true}
+              color="white"
+            >
+              Work Experience
+            </RoughNotation>
+          ) : (
+            'Work Experience'
+          )}
+        </span>
+      </h1>
+    </motion.div>
       
       <motion.div variants={fadeIn("up", "tween", .2, 1)} className="mt-10 flex flex-col">
         <VerticalTimeline>

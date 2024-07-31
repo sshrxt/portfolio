@@ -8,16 +8,34 @@ import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 import StarWrapper from "@/lib/SectionWrapper";
 import {fadeIn, slideIn, textVariant} from "@/lib/motion";
 import { RoughNotation } from "react-rough-notation";
+import { useState } from "react";
 
 const Approach = () => {
+  const [showRoughNotation, setShowRoughNotation] = useState(false);
   return (
     <section className="w-full py-20">
-      <motion.div variants={textVariant()}>
+      <motion.div
+      variants={textVariant()}
+      onAnimationComplete={() => setShowRoughNotation(true)}
+    >
       <h1 className="heading">
-        My <span className="text-purple"><RoughNotation animationDelay={12} type="underline" color="#829BC8" show={true}>Approach</RoughNotation></span>
+        My{' '}
+        <span className="text-purple">
+          {showRoughNotation ? (
+            <RoughNotation
+              animationDelay={2}
+              type="underline"
+              color="#829BC8"
+              show={true}
+            >
+              Approach
+            </RoughNotation>
+          ) : (
+            'Approach'
+          )}
+        </span>
       </h1>
-      </motion.div>
-
+    </motion.div>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
         <motion.div variants={slideIn("left", "spring", 0.1, 0.8)}>
           <Card

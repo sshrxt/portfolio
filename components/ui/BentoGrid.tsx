@@ -171,6 +171,7 @@ export const BentoGridItem = ({
                 show={true}
                 type={getAnnotationType(titleHighlight)}
                 color={getAnnotationColor(titleHighlight)}
+                animationDelay={6}
               >
                 {titleHighlight}
               </RoughNotation>

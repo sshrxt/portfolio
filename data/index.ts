@@ -170,9 +170,9 @@ export const navItems = [
     {
       quote:
         "During Shrut's internship, he demonstrated exceptional skill and enthusiasm in every task. His ability to quickly grasp new concepts, tackle complex challenges, and contribute effectively to our projects was impressive. Shrut’s proactive approach, strong problem-solving skills, and eagerness to learn made him a valuable asset to our team and a pleasure to work with.",
-      name: "Luc Renambot",
-      title: "Research Professor at EVL",
-      img: '/luc.jpg',
+      name: "Angelica Schab",
+      title: "Research Professor",
+      img: '/koala.jpg',
     },
     {
       quote:
@@ -184,9 +184,9 @@ export const navItems = [
     {
       quote:
         "During Shrut's internship, he demonstrated exceptional skill and enthusiasm in every task. His ability to quickly grasp new concepts, tackle complex challenges, and contribute effectively to our projects was impressive. Shrut’s proactive approach, strong problem-solving skills, and eagerness to learn made him a valuable asset to our team and a pleasure to work with.",
-      name: "Luc Renambot",
-      title: "Research Professor at EVL",
-      img: '/luc.jpg',
+      name: "Angelica Schab",
+      title: "Research Professor",
+      img: '/koala.jpg',
     },
   ];
   
