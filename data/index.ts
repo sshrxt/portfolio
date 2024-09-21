@@ -39,6 +39,7 @@ import evl from "@/public/evl.webp"
 import sparkhacks from "@/public/sparkhacks.png"
 import frc from "@/public/frc.png"
 import walmart from "@/public/walmart.png"
+import illinois from "@/public/uiuc.png"
 
 
 
@@ -121,12 +122,12 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "Work-in-Progress",
-      des: "I am currently working on this project, ETA - August 5th",
-      img: "/bg.png",
+      title: "InvestAI",
+      des: "Helping users gain more insight on prospective financial investment",
+      img: "/InvestAI.png",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/next.svg"],
-      link: "https://www.youtube.com/watch?v=JgkdwhxCyyk",
-      linkMsg: "Check Live Site",
+      link: "https://github.com/sshrxt/InvestAI",
+      linkMsg: "Check Repository",
     },
     {
       id: 2,
@@ -168,7 +169,7 @@ export const navItems = [
     {
       quote:
         "During Shrut's internship, he demonstrated exceptional skill and enthusiasm in every task. His ability to quickly grasp new concepts, tackle complex challenges, and contribute effectively to our projects was impressive. Shrut’s proactive approach, strong problem-solving skills, and eagerness to learn made him a valuable asset to our team and a pleasure to work with.",
-      name: "Ravi Patel",
+      name: "Luc Renambot",
       title: "Research Professor",
       img: '/koala.jpg',
     },
@@ -182,7 +183,7 @@ export const navItems = [
     {
       quote:
         "During Shrut's internship, he demonstrated exceptional skill and enthusiasm in every task. His ability to quickly grasp new concepts, tackle complex challenges, and contribute effectively to our projects was impressive. Shrut’s proactive approach, strong problem-solving skills, and eagerness to learn made him a valuable asset to our team and a pleasure to work with.",
-      name: "Jyoti Patel",
+      name: "Luc Renambot",
       title: "Research Professor",
       img: '/koala.jpg',
     },
@@ -253,11 +254,38 @@ export const navItems = [
 
  export const experiences = [
     {
-      title: "Full-Stack Developer",
+      title: "Software Engineer",
+      company_name: "Electronic Visualization Labratory(evl) - SAGE Department",
+      icon: evl,
+      iconBg: "black",
+      date: "Aug 2024 - Present",
+      points: [
+        "Developed AI-driven applications within the SAGE3 collaboration platform, integrating large language models (LLM) for real-time information extraction and content enhancement.",
+        "Designed scalable, LLM-powered tools for spatial collaboration, boosting productivity by 20% in data-rich environments.",
+        "Implemented seamless LLM-based features, such as keyword extraction from SAGE3's sticky note application, enabling smarter, context-aware collaboration tools.",
+        "Collaborated with cross-functional teams through code reviews and pull requests, improving overall project reliability and maintainability.",
+      ],
+
+    },
+    {
+      title: "Software Developer & Reaearcher",
+      company_name: "Illinois Mathematics Laboratory",
+      icon: illinois,
+      iconBg: "black",
+      date: "Aug 2024 - Present",
+      points: [
+        "Developed a combinatorial graph-coloring game utilizing React, Javascript, and React Native, aimed at making complex mathematical concepts accessible to the public",
+        "Integrated complex game logic that enforces real-time validation of graph coloring rules, maintaining game constraints while providing a seamless experience for users",
+        "Collaborated with a team of 4 undergraduate students and 2 graduate mentors to implement front-end and back-end features for web-based and mobile applications",
+      ],
+
+    },
+    {
+      title: "Software Engineer Intern",
       company_name: "Electronic Visualization Labratory(evl)",
       icon: evl,
       iconBg: "black",
-      date: "June 2024 - Present",
+      date: "June 2024 - Aug 2024",
       points: [
         "Queried and Utilized EVL's llamma 3.1 AI models to ensure proper functionality and testing",
         "Developed REST Api's to perform CRUD operations utilizing Express JS and Typescript",
@@ -275,30 +303,6 @@ export const navItems = [
         "Collaborated with cross-functional teams including designers and backend engineers to create a high quality webpage.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Camp Facilitator",
-      company_name: "Expanded Learning",
-      icon: frc,
-      iconBg: "black",
-      date: "June 2022 - Present",
-      points: [
-        "Cultivated an inclusive learning envrionment throughout Spring and Summer camps, driving consistent weekly participation exceeding 15 students",
-        "Spearheaded team synergy and leadership development throughout the basketball season via innovative and dynamic practice sessionsand games",
-        "Orchestrated cohesive student interactions through meticulosy planned activities fostering organic social bonds",
-      ],
-    },
-    {
-      title: "Cashier",
-      company_name: "Walmart",
-      icon: walmart,
-      iconBg: "white",
-      date: "Nov. 2021 - June 2022",
-      points: [
-        "Utilized Walmart's POS system to process transactions quickly and accurately, demonstrating proficiency with software systems and data entry",
-        "Developed and implemented efficient checkout processes, reducing customer wait times and enhancing overall store efficiency",
-        "Collaborated with a team of cashiers and supervisors to streamline operations during peak hours, emphasizing teamwork and leadership potential",
       ],
     },
   ];

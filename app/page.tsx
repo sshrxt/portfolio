@@ -21,7 +21,6 @@ export default function Home() {
         <WorkExperience />
         <Tech />
         <Clients />
-        <Approach />
         <Footer />
       </div>
     </main>
