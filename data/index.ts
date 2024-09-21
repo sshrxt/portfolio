@@ -268,7 +268,7 @@ export const navItems = [
 
     },
     {
-      title: "Software Developer & Reaearcher",
+      title: "Software Developer & Researcher",
       company_name: "Illinois Mathematics Laboratory",
       icon: illinois,
       iconBg: "black",
