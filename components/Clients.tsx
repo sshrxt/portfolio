@@ -34,17 +34,6 @@ const Clients = () => {
         From
         <span className="text-purple">
           {' '}
-          {showNotation.underlineClients ? (
-            <RoughNotation type="underline" color="#829BC8" show={true} animationDelay={3.3}>
-              Satisfied Clients
-            </RoughNotation>
-          ) : (
-            'Satisfied Clients'
-          )}
-        </span>{' '}
-        &{' '}
-        <span className="text-purple">
-          {' '}
           {showNotation.underlineEmployers ? (
             <RoughNotation type="underline" color="#829BC8" show={true} animationDelay={2.9}>
               Employers

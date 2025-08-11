@@ -32,10 +32,6 @@ const Hero = () => {
       <div className="flex justify-center relative mb-10 z-10">
         <RoughNotationGroup show={true}>
           <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-            <TextGenerateEffect
-              className="text-center text-[40px] md:text-5xl lg:text-6xl"
-              words="Revitalizing Dreams into Impactful Solutions"
-            />
             <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
               Hi👋 I&apos;m Shrut, a <RoughNotation type="box" color="#829BC8" animationDelay={1}>Web Developer</RoughNotation> based in <RoughNotation type="highlight" color="#7B749F" animationDelay={1}>Chicago,</RoughNotation> <RoughNotation type="highlight" color="#7B729F" animationDelay={1.05}> Illinois</RoughNotation>
             </p>

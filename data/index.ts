@@ -40,6 +40,7 @@ import sparkhacks from "@/public/sparkhacks.png"
 import frc from "@/public/frc.png"
 import walmart from "@/public/walmart.png"
 import illinois from "@/public/uiuc.png"
+import walgreens from "@public/walgreens.png"
 
 
 
@@ -205,6 +206,11 @@ export const navItems = [
       name: "UIUC",
       nameImg: "/uiuc.png",
     },
+    {
+      id: 4,
+      name: "Walgreens",
+      nameImg: '/walgreens.png'
+    }
   ];
   
   export const workExperience = [
@@ -254,17 +260,31 @@ export const navItems = [
 
  export const experiences = [
     {
+      title: "Software Engineer Intern",
+      company_name: "Walgreens",
+      icon: walgreens,
+      iconBg: "black",
+      date: "June 2025 - Aug 2025",
+      points: [
+      "Developing a proxy service in SpringBoot that searches over 310 million specialty pharmacy records to find the most accurate patient matches, achieving over 95% accuracy.",
+      "Building a dashboard in Angular, TypeScript, and TailwindCSS that aggregates data from three pharmacy services, enabling access to over 109 million linked patient records.",
+      "Implementing authentication logic in an internal platform using C# to ensure all user requests include valid credentials, securing access for over 500 daily users.",
+      "Contributing to daily Scrum stand-ups and bi-weekly sprints by designing user stories and delivering features in Azure DevOps, with regular demos to keep stakeholders aligned."
+      ],
+
+    },
+    {
       title: "Software Engineer",
       company_name: "Electronic Visualization Labratory(evl) - SAGE Department",
       icon: evl,
       iconBg: "black",
-      date: "Aug 2024 - Present",
-      points: [
-        "Developed AI-driven applications within the SAGE3 collaboration platform, integrating large language models (LLM) for real-time information extraction and content enhancement.",
-        "Designed scalable, LLM-powered tools for spatial collaboration, boosting productivity by 20% in data-rich environments.",
-        "Implemented seamless LLM-based features, such as keyword extraction from SAGE3's sticky note application, enabling smarter, context-aware collaboration tools.",
-        "Collaborated with cross-functional teams through code reviews and pull requests, improving overall project reliability and maintainability.",
-      ],
+      date: "Aug 2024 - May 2025",
+     points: [
+        "Integrated large language model (LLM) capabilities into SAGE3’s front-end using React and TypeScript, delivering contextual AI assistance seamlessly within the existing UI.",
+        "Increased LLM throughput by 80% by refactoring the Python/FastAPI backend with LangGraph caching and batching optimizations.",
+        "Routed real-time meeting audio via WebRTC to a server-side pipeline using OpenAI Whisper with speaker diarization, achieving ≤ 1s latency and producing speaker-tagged transcripts.",
+        "Built an AI export pipeline (Python, LangChain, REST) that converts user-selected boards and apps into PDF and Jupyter reports with AI-generated summaries at 97% accuracy."
+      ]
 
     },
     {
@@ -272,12 +292,13 @@ export const navItems = [
       company_name: "Illinois Mathematics Laboratory",
       icon: illinois,
       iconBg: "black",
-      date: "Aug 2024 - Present",
+      date: "Aug 2024 - Dec 2024",
       points: [
-        "Developed a combinatorial graph-coloring game utilizing React, Javascript, and React Native, aimed at making complex mathematical concepts accessible to the public",
-        "Integrated complex game logic that enforces real-time validation of graph coloring rules, maintaining game constraints while providing a seamless experience for users",
-        "Collaborated with a team of 4 undergraduate students and 2 graduate mentors to implement front-end and back-end features for web-based and mobile applications",
-      ],
+        "Developed a combinatorial graph-coloring game utilizing React and JavaScript, engaging over 300 users by turning abstract mathematical conjectures into interactive, visually intuitive puzzles.",
+        "Implemented load testing and memory-management strategies, maintaining zero downtime even as concurrent game-state complexity scaled beyond 10× initial benchmarks.",
+        "Engineered real-time validation logic by integrating efficient graph algorithms, enforcing complex graph-coloring constraints with 99.9% accuracy."
+      ]
+
 
     },
     {

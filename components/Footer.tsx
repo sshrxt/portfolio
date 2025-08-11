@@ -27,25 +27,6 @@ const Footer = () => {
     >
       <footer className="w-full mb-[10px] pb-10" id="contact">
         <div className="flex flex-col items-center">
-          <h1 className="heading lg:max-w-[45vw]">
-            Ready to take your{' '}
-            {showNotations.company ? (
-              <RoughNotation type="highlight" show={true} color="#cbacf9" animationDelay={2}>
-                 Company
-              </RoughNotation>
-            ) : (
-              'your Company'
-            )}{' '}
-            and{' '}
-            {showNotations.ideas ? (
-              <RoughNotation type="highlight" color="#829BC8" show={true} animationDelay={2}>
-                Ideas
-              </RoughNotation>
-            ) : (
-              'Ideas'
-            )}{' '}
-            to the <span className="text-purple">next level?</span>
-          </h1>
           <p className="text-white-200 md:mt-10 my-5 text-center">
             Reach out to me{' '}
             {showNotations.today ? (
