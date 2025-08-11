@@ -40,7 +40,7 @@ import sparkhacks from "@/public/sparkhacks.png"
 import frc from "@/public/frc.png"
 import walmart from "@/public/walmart.png"
 import illinois from "@/public/uiuc.png"
-import walgreens from "@public/walgreens.png"
+import walgreens from "@/public/walgreens.png"
 
 
 
@@ -231,7 +231,7 @@ export const navItems = [
     {
       id: 3,
       title: "Camp Conselour (Expanded Learning)",
-      desc: "Help facilitate camp activities and connections with a group of 150-200 students throughout summer and spring breaks",
+      desc: "Help facilitagreente camp activities and connections with a group of 150-200 students throughout summer and spring breaks",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp3.svg",
     },
